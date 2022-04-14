@@ -1,14 +1,18 @@
 import React from "react";
 import "./Keyboard.css";
 
-export default function Keyboard({ clickHandler }) {
+export default function Keyboard({ clickHandler, equal, reset }) {
+
+  const buttons = [];
+  
+
   return (
     <div className="keyboard">
       <div className="key-row">
         <button name="(" onClick={clickHandler}>
           (
         </button>
-        <button name="CE" onClick={clickHandler}>
+        <button name="CE" onClick={reset}>
           CE
         </button>
         <button name=")" onClick={clickHandler}>
@@ -60,7 +64,7 @@ export default function Keyboard({ clickHandler }) {
           9
         </button>
         <button name="*" onClick={clickHandler}>
-          x
+          *
         </button>
       </div>
 
@@ -71,11 +75,11 @@ export default function Keyboard({ clickHandler }) {
         <button name="0" onClick={clickHandler}>
           0
         </button>
-        <button name="=" onClick={clickHandler}>
+        <button name="=" onClick={equal}>
           =
         </button>
         <button name="/" onClick={clickHandler}>
-          ÷
+          /
         </button>
       </div>
     </div>
