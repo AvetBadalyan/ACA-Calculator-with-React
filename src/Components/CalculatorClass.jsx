@@ -8,7 +8,7 @@ export default function CalculatorClass() {
 
   const [result, setResult] = useState();
 
-  const clickHandler = () => {
+  const clickHandler = (e) => {
     setResult(e.target.innerHTML);
   }
   return (

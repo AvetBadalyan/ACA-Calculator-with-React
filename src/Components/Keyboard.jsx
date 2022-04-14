@@ -4,7 +4,7 @@ import "./Keyboard.css";
 export default function Keyboard({ clickHandler }) {
   return (
     <div className="keyboard">
-      <div>
+      <div className="key-row">
         <button name="(" onClick={clickHandler}>
           (
         </button>
@@ -18,8 +18,8 @@ export default function Keyboard({ clickHandler }) {
           C
         </button>
       </div>
-      <div>
-        {" "}
+
+      <div className="key-row">
         <button name="1" onClick={clickHandler}>
           1
         </button>
@@ -33,8 +33,8 @@ export default function Keyboard({ clickHandler }) {
           +
         </button>
       </div>
-      <div>
-        {" "}
+
+      <div className="key-row">
         <button name="4" onClick={clickHandler}>
           4
         </button>
@@ -49,7 +49,7 @@ export default function Keyboard({ clickHandler }) {
         </button>
       </div>
 
-      <div>
+      <div className="key-row">
         <button name="7" onClick={clickHandler}>
           7
         </button>
@@ -64,7 +64,7 @@ export default function Keyboard({ clickHandler }) {
         </button>
       </div>
 
-      <div>
+      <div className="key-row">
         <button name="." onClick={clickHandler}>
           .
         </button>
