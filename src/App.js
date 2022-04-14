@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import CalculatorClass from "./Components/CalculatorClass";
+import Header from "./Components/Header";
 
 function App() {
+  const newCalculatorHandler = () => {
+    <CalculatorClass />;
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <CalculatorClass />
+      <button onClick={newCalculatorHandler}> Add a new Calculator </button>
     </div>
   );
 }
