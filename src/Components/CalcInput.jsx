@@ -3,9 +3,11 @@ import "./CalcInput.css";
 
 export default function CalcInput() {
   return (
-    <div className='screen'>
-      <input type="text" />
-      <input type="text" readOnly />
+    <div className="screen">
+      <form>
+        <input type="text" className="input" />
+        <input type="text" readOnly className="input" />
+      </form>
     </div>
-  )
+  );
 }

@@ -1,6 +1,6 @@
 .screen {
-  border: 1px solid black;
-  background-color: #4357692d;
+  width: 100%;
+  background-color: gray;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -9,4 +9,12 @@
   color: white;
   font-weight: bold;
   box-sizing: border-box;
+}
+
+.input {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid black;
+  font-size: 40px;
+  padding: 5px;
 }
