@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import CalculatorClass from "./Components/CalculatorClass";
 import Header from "./Components/Header";
+import background from "./bg.jpeg";
 
 function App() {
   const [calcArray, setCalcArray] = useState([1]);
@@ -10,7 +11,12 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{
+        backgroundImage: `url(${background})`,
+      }}
+    >
       <Header />
       <div className="all-calculators">
         {calcArray.map((item) => (
@@ -18,7 +24,7 @@ function App() {
         ))}
       </div>
 
-      <button onClick={calculatorAddHandler}>Add a new Calculator</button>
+      <button onClick={calculatorAddHandler} className="calculator-add-button">Add a new Calculator</button>
     </div>
   );
 }
