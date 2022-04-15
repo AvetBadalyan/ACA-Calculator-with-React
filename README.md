@@ -1,5 +1,4 @@
-![Screenshot](./calc.jpg)
-
+![Screenshot](./screenshot.jpg)
 
 # Getting Started with Create React App
 
